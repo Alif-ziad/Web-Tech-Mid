@@ -1,0 +1,40 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+.sidebar,
+.main,
+.ads {
+display: inline-block;
+vertical-align: top;
+padding: 20px;
+margin: 5px;
+border: 2px solid #333;
+box-sizing: border-box;
+}
+
+
+.sidebar {
+width: 20%;
+background-color: #f0c040;
+}
+
+
+.main {
+width: 56%;
+background-color: #d0e0ff;
+}
+
+
+.ads {
+width: 20%;
+background-color: #ffd0d0;
+}
+
+
+h2 {
+margin-top: 0;
+}

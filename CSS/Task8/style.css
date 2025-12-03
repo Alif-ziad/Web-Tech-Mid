@@ -1,0 +1,33 @@
+/* Lab Task 08 – Overflow Handling */
+
+/* Common box style */
+.box {
+    width: 300px;          /* Fixed width */
+    height: 200px;         /* Fixed height */
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #f8f8f8;
+}
+
+/* Overflow Effects */
+
+/* overflow: visible → Content spills outside the box */
+.visible {
+    overflow: visible;
+}
+
+/* overflow: hidden → Extra content is cut off and not shown */
+.hidden {
+    overflow: hidden;
+}
+
+/* overflow: scroll → Shows scrollbars even if not needed */
+.scroll {
+    overflow: scroll;
+}
+
+/* overflow: auto → Shows scrollbars only when necessary */
+.auto {
+    overflow: auto;
+}

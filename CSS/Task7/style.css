@@ -1,0 +1,32 @@
+/* Sticky Header Style */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sticky-header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sticky-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+main {
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
