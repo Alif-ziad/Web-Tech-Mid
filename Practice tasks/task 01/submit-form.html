@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="script.js" defer>
+            <title>submit-form</title>
+        </script>
+    </head>
+
+    <body>
+        <form onsubmit="return formValidate()">
+            <h1>Submission Form</h1>
+            <fieldset>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname">
+                <span id="first"></span><br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname">
+                <span id="last"></span><br><br>
+
+                <input type="submit" id="submit" value="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
