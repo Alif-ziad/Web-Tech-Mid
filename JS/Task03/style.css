@@ -1,0 +1,92 @@
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --border: #dddddd;
+  --link: #0a66c2;
+  --btn-bg: #111111;
+  --btn-text: #ffffff;
+}
+
+.dark {
+  --bg: #0f1419;
+  --text: #e6edf3;
+  --muted: #9aa4af;
+  --border: #1f2328;
+  --link: #58a6ff;
+  --btn-bg: #e6edf3;
+  --btn-text: #0f1419;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+footer {
+  border-top: 1px solid var(--border);
+}
+
+h1, h2, h3 {
+  margin: 0 0 8px;
+}
+
+p, article, section {
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+em {
+  color: var(--muted);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#themeToggle {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#themeToggle:hover {
+  opacity: 0.9;
+}
+
+/* Optional: respect system preference on first load if class not set */
+@media (prefers-color-scheme: dark) {
+  body.light:not(.dark) {
+    /* no change, explicit class controls theme */
+  }
+}

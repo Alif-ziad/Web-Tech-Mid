@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Portal Signup</h1>
+  
+  <form id="signupForm">
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    <div id="fullnameError" class="error"></div>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <div id="emailError" class="error"></div>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <div id="passwordError" class="error"></div>
+
+    <!-- Confirm Password -->
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <div id="confirmPasswordError" class="error"></div>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+    <div id="phoneError" class="error"></div>
+
+    <!-- Submit -->
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="successMessage" class="success"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
